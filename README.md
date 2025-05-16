@@ -33,11 +33,9 @@ Imagine a vertical cylindrical column with multiple theoretical stages (trays) s
       ---------------------
       |    Stage 1 (Bottom)|
       ---------------------
-          ↑
-      (Vapor Up)
+          ↑ (Vapor Up)
           | Liquid Down
-          ↓
-      (Feed In, Mixture of Components)
+          ↓ (Feed In, Mixture of Components)
           ↓
       ---------------------
       | Reboiler          |
