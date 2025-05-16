@@ -6,14 +6,7 @@ However, creating a fully detailed and accurate simulation of a real-world petro
 - **Control systems**: Real distillation columns employ sophisticated control loops to maintain desired product purities and operating conditions.
 
 Given these complexities, a truly representative simulation would require extensive data and specialized knowledge in chemical engineering and petroleum refining.
-However, I can create a simplified conceptual model of a distillation column in MATLAB to illustrate the basic principles and generate some representative plots. This simplified model will make several assumptions to keep the scope manageable.
-Here's a plan:
-
-1. Simplified Column Diagram: I'll describe a basic multi-stage distillation column.
-2. Conceptual Model: I'll outline a simplified mathematical model based on mass balances for two key components.
-3. MATLAB Code (Illustrative): I'll provide a basic MATLAB script to simulate the concentration changes over time based on the simplified model.
-4. Conceptual Plots: I'll describe the kind of time-varying concentration plots you would expect to see.
-
+However, I created a simplified conceptual model of a distillation column in MATLAB to illustrate the basic principles and generate some representative plots. This simplified model will make several assumptions to keep the scope manageable.
 
 ### 1. Simplified Column Diagram:
 
@@ -120,10 +113,10 @@ This code makes significant simplifications:
 ### 4. Conceptual Plots:
 Running a more sophisticated simulation (or even this simplified one) would typically yield the following types of time-varying graphs:
 
-* Liquid Mole Fractions on Each Stage vs. Time: You would observe that for the lighter component (A):
+* Liquid Mole Fractions on Each Stage vs. Time: We would observe that for the lighter component (A):
     * The concentration of A in the liquid phase would be highest at the top of the column and lowest at the bottom (reboiler).
     * Over time, if the column is operating correctly, these concentration profiles would tend towards a steady state.
-    * If there are disturbances (e.g., changes in feed composition or rate), you would see transient changes in the concentrations before a new steady state (or an unstable condition) is reached.
+    * If there are disturbances (e.g., changes in feed composition or rate), we would see transient changes in the concentrations before a new steady state (or an unstable condition) is reached.
 * Vapor Mole Fractions Entering Each Stage vs. Time: Similarly, for the lighter component (A):
     * The concentration of A in the vapor phase would be highest entering the condenser (top of the column) and lowest entering the reboiler (bottom).
     * The trends over time would mirror those of the liquid concentrations, with the vapor compositions being richer in the more volatile component at each stage due to vapor-liquid equilibrium.
@@ -133,7 +126,7 @@ Running a more sophisticated simulation (or even this simplified one) would typi
 
 #### Moving Towards a More Realistic Simulation:
 
-To create a more realistic simulation for a petroleum refinery distillation column, you would need to incorporate:
+To create a more realistic simulation for a petroleum refinery distillation column, we would need to incorporate:
 * **Multicomponent VLE**: Use appropriate thermodynamic models (e.g., Raoult's Law with activity coefficients, Peng-Robinson equation of state) to accurately predict vapor-liquid equilibrium for the complex mixture of hydrocarbons in crude oil.
 * **Tray Efficiency**: Account for the fact that real trays do not achieve perfect equilibrium. Use empirical correlations or more complex models for tray efficiency (e.g., Murphree efficiency).
 * **Hydrodynamic Models**: Include pressure drop calculations and consider the impact of vapor and liquid flow rates on column performance.
@@ -143,4 +136,4 @@ To create a more realistic simulation for a petroleum refinery distillation colu
 
 Building such a detailed simulation typically requires specialized software like Aspen Plus, HYSYS, or CHEMCAD, which have built-in thermodynamic property databases and unit operation models.
 
-While the simplified MATLAB code provides a basic illustration of the dynamic behavior, remember that a real petroleum refinery distillation column simulation is a much more involved process.
+While the simplified MATLAB code provides a basic illustration of the dynamic behavior, a real petroleum refinery distillation column simulation is a much more involved process.
