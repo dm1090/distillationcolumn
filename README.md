@@ -103,8 +103,9 @@ $${d(H_Rx_{1,A}) \over dt} = L_2x_{2,A} − V_1y_{1,A} − Bx_{B,A} + F \cdot z_
 
 where $H_R$​ is the reboiler holdup, and $B$ is the bottoms product flow rate. We can assume $y_{1,A}$ is in equilibrium with $x_{1,A}$ and $x_{B,A} ≈ x_{1,A}$.
 
-### 3. Simplifications:
+### 3. Assumptions
 
+* **Simplifications:**
 This code makes significant simplifications:
     * Binary mixture.
     * Constant relative volatility.
@@ -112,12 +113,13 @@ This code makes significant simplifications:
     * Ideal stages (100% efficiency).
     * Simplified dynamics.
     * Euler integration method (for simplicity, more accurate methods exist).
-* Parameter Values: The parameter values are arbitrary and chosen for illustrative purposes. Real petroleum distillation columns have highly specific parameters.
-* Units: Ensure consistency in units throughout the simulation.
-* Steady State: The initial conditions are a rough guess and the simulation will show how the concentrations evolve over time from this initial state.
+* **Parameter Values:** The parameter values are arbitrary and chosen for illustrative purposes. Real petroleum distillation columns have highly specific parameters.
+* **Units:** Ensure consistency in units throughout the simulation.
+* **Steady State:** The initial conditions are a rough guess and the simulation will show how the concentrations evolve over time from this initial state.
 
 ### 4. Conceptual Plots:
 Running a more sophisticated simulation (or even this simplified one) would typically yield the following types of time-varying graphs:
+
 * Liquid Mole Fractions on Each Stage vs. Time: You would observe that for the lighter component (A):
     * The concentration of A in the liquid phase would be highest at the top of the column and lowest at the bottom (reboiler).
     * Over time, if the column is operating correctly, these concentration profiles would tend towards a steady state.
